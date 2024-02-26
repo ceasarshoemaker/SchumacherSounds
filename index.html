@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schumacher Sounds</title>
+<style>
+    body{
+        background-color: rgb(13, 11, 21);
+        text-wrap:wrap;
+        color:azure;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    div.header{
+        display:flex;
+        flex-wrap: wrap;
+        height:120px;
+        background-color:rgba(25, 23, 29,0.7);
+        position: fixed;
+        width:100%;
+        margin:0px;
+        padding:0px;
+        top:0px;
+        align-items: center;
+    }
+    div.title{
+        padding-left:20px;
+    }
+    img.logo{
+        width:auto;
+        height:100px;
+        align-self: flex-start;
+        padding:10px;
+    }
+    div.menu{
+        display:flex;
+        flex-wrap: wrap;
+        width:auto;
+        height:auto;
+        padding:0px;
+        justify-content:left;
+        margin-left:120px;
+        align-self: center;
+        margin-bottom:4px;
+    }
+    button{
+        background-color: #212023;
+        border-style:solid;
+        border-radius:0px;
+        border-width: 0px;
+        border-color: rgb(51, 53, 53);
+        padding:10px;
+        width:200px;
+        height:50px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:azure;
+        font-size: 18;
+    }
+    button:hover{
+        cursor:pointer;
+        background-color: rgb(0, 33, 61);
+        border-width: 0.5px;
+        transition-duration: 0.5s;
+    }
+    div.cover{
+        width:100%;
+        height:800px;
+        background-image: url("/Users/cedarschumacher/Desktop/Schumacher Sounds/Pictures and Videos/2023 Wrap-up/3-june13th.jpeg");
+        background-position: center -100px;
+        overflow:hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button.bookbutton{
+        width:220px;
+        height:80px;
+        background-color: transparent;
+        border-style: solid;
+        border-width:4px;
+        border-color:#38363c;
+        color:#38363c;
+        font-weight: bolder;
+    }
+    button.bookbutton:hover{
+        background-color:#38363c;
+        color:azure;
+        transition-duration: 0.4s;
+    }
+    hr{
+        width:75%;
+        height:1px;
+        border-width:0px;
+        background-color:azure;
+    }
+    div.bio{
+        display:grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 70px 500px auto 400px auto;
+        gap: 10px;
+        padding:10px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        /*background-color:#212023;*/
+        background-image: linear-gradient(transparent,#212023);
+        justify-content: center;
+    }
+    div.bio > div{
+        /*background-color: rgb(8, 33, 25);*/
+        text-align: center;
+    }
+    div.biotitle{
+        grid-column: 1/4;
+        grid-row:1;
+        font-size: 35px;
+        align-self:center;
+        justify-self:left;
+        margin-left:20px;
+    }
+    div.biopic{
+        grid-column:1/4;
+        grid-row:2;
+        overflow:hidden;
+    }
+    div.biopic > img{
+        width:800px;
+        height:auto;
+        margin-top: -50px;
+    }
+    div.captionbiopic{
+        grid-column:1/4;
+        grid-row:3;
+        margin-left:15px;
+        margin-right:15px;
+    }
+    div.trumpetpic{
+        overflow:hidden;
+        margin-left:10px;
+    }
+    div.trumpetpic > img{
+        width:400px;
+        height:auto;
+        margin-top:-120px;
+    }
+    div.hikingpic{
+        overflow:hidden;
+    }
+    div.hikingpic > img{
+        width:auto;
+        height:400px;
+        margin-left:-90px;
+    }
+    div.guitarpic{
+        overflow:hidden;
+        margin-right:10px;
+    }
+    div.guitarpic > img{
+        width:400px;
+        height:auto;
+    }
+    div.socials{
+        display:grid;
+        grid-template-columns: 100px 300px 100px;
+        grid-template-rows: 100px;
+        gap: 10px;
+        padding:10px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:transparent;
+        justify-content: center;
+        height:auto;
+        border-style: solid;
+        border-width: 2px;
+        border-left:0px;
+        border-right:0px;
+        border-color:#38363c;
+    }
+    div.contact{
+        text-align: center;
+        align-self:center;
+        font-size:20px;
+    }
+    div.youtube{
+        overflow:hidden;
+        align-self:center;
+    }
+    div.youtube > a img{
+        width:100px;
+        height:auto;
+    }
+    div.instagram{
+        overflow:hidden;
+        align-self: center;
+    }
+    div.instagram > a img{
+        width:60px;
+        height:auto;
+        margin-left:12px;
+    }
+    div.footer{
+        background-color:rgba(33, 32, 35,0.5);
+        height:auto;
+        width:100%;
+        font-size: 14px;
+        text-align: center;
+        color:rgb(62, 64, 70);
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="logo"><a href="index.html"><img class="logo" src="/Users/cedarschumacher/Desktop/Schumacher Sounds/Publicity/Logo Stuff/Schumacher Sounds Logo.jpg"></a></div>
+    <div class="title"><h1>Schumacher Sounds</h1></div>
+      <div class="menu">
+      <div><a href="djing.html"><button type="button">DJ'ing</button></a></div>
+      <div><a href="eventproduction.html"><button type="button">Event Production</button></a></div>
+      <div><a href="about.html"><button type="button">About</button></a></div>
+      <div><a href="contact.html"><button type="button">Contact</button></a></div>
+    </div>
+</div>
+<div class="cover">
+    <div><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc8EriFGcyXx5odRa38oR5Thudo9Xa4MHcbb8ccvvZC07QUMw/viewform"><button type="button" class="bookbutton">Book Now</button></a></div>
+</div>
+<br><hr><br>
+<div class="bio">
+    <div class="biotitle">About Me</div>
+    <div class="biopic"><img src="/Users/cedarschumacher/Desktop/Schumacher Sounds/Pictures and Videos/NHS Semi 2023/IMG_6800 2.JPG"></div>
+    <div class="captionbiopic">
+        <h3>Bio</h3>
+        <p>Hi! I'm currently a member of the Junior class at Newburyport High School. I created Schumacher Sounds in 2022 as a way to combine mine love of music performance and production. I've has played trumpet and guitar in various groups and ensembles for years, and feel equally at home onstage or backstage.</p>
+    </div>
+    <div class="trumpetpic"><img src="/Users/cedarschumacher/Desktop/IMG_20230331_204001.jpeg"></div>
+    <div class="hikingpic"><img src="/Users/cedarschumacher/Desktop/IMG_0287.jpeg"></div>
+    <div class="guitarpic"><img src="/Users/cedarschumacher/Desktop/IMG_7329.jpeg"></div>
+    <div><p>I've played trumpet since 5th Grade, and I've had the opportunity to perform with the MMEA Senior District Jazz Band twice! I also love playing in my school's pit band for the musical.</p></div>
+    <div><p>I love hiking, especially in the winter, and I'm almost done climbing the 48 High Peaks of New Hampshire!</p></div>
+    <div><p>I taught myself guitar over the last few years, and love playing with my band, Hyperdrive!</p></div>
+</div>
+<div class="socials">
+    <div class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCCcjzZ-h-k3J-SZ5dvSF0XQ"><img src="/Users/cedarschumacher/Desktop/youtubeedited.png"></a></div>
+    <div class="contact"><p>-Social Media-</p></div>
+    <div class="instagram"><a target="_blank" href="https://www.instagram.com/schumacher_sounds/"><img src="/Users/cedarschumacher/Desktop/instaedited.png"></a></div>
+</div>
+<div class="footer">
+    <br>
+    <h4>Schumacher Sounds</h4>
+    <p>Copyright &#169; Cedar Schumacher, 2024</p>
+    <br>
+</div>
+</body>
+</html>
